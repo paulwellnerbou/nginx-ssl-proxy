@@ -19,9 +19,7 @@ FROM nginx
 
 MAINTAINER Evan Brown <evanbrown@google.com>
 
-RUN rm /etc/nginx/conf.d/*.conf
-
-RUN mkdir -p /etc/nginx/extra-conf.d
+RUN rm /etc/nginx/conf.d/*.conf && mkdir -p /etc/nginx/extra-conf.d
 
 WORKDIR /usr/src
 
